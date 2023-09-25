@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mr.Camel</title>
+        <link rel="stylesheet" href="">
+        <style>
+            body
+            {
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container
+            {
+                line-height: 150%;
+            }
+            .header
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                background-color: white;
+            }
+            .header h1
+            {
+                color : black;
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+            }
+            .header .social a
+            {
+                padding: 0 5px;
+                color: black;
+            }
+            .left
+            {
+                float: left;
+                width: 180px;
+                margin: 0;
+                padding: 1em;
+            }
+            .content
+            {
+                margin-left: 190px;
+                border-left: 1px solid white;
+                padding: 1em;
+                overflow: hidden;
+            }
+            u1
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            li a
+            {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            li a.active
+            {
+                background-color: cyan;
+                color: white;
+            }
+            table
+            {
+                font font-family: arial ,sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                margin: 30px 0;
+            }            
+
+            td,
+            th
+            {
+                border: 1px solid white;
+                padding: 8px;
+            }
+            th:nth-child(1)
+            {
+                background-color: cyan;
+                color: white;
+            }
+            tr td i.fas
+            {
+                display: block;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            .footer
+            {
+                padding: 55px 20px;
+                background-color: navy;
+                color: white;
+                text-align: center;
+            }    
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Mr.Camel</h1>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i>></a>
+                    <a href="#"><i class="fab fa-instagram"></i>></a>
+                    <a href="#"><i class="fab fa-twitter"></i>></a>
+                </div>
+            </header>
+            <aside class="left">
+                <img src="" width="160px" />
+                <u1>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+
+                </u1>
+                <br><br>
+                <p>"Do something important in life. I convert green grass to code."<br>- Mr Camel</p>       
+            </aside>
+            <main class="content">
+                <h2>About me</h2>
+                <p> I don't look like some handsome horse, nut I am a real desert king. I can days without water.</p>
+                <h2> My Career</h2>
+                <p> I work as a web developer for a company that makes websites for camel businesses</p>
+                <hr><br>
+                <h2> How Can I Help You?</h2>
+                <table>
+                    <tr>
+                        <th>SKILL 1</th>
+                        <th>SKILL 2</th>
+                        <th>SKILL 3</th>
+                    </tr>
+                    <tr>
+                    <td><i class="fas fa-broom"></i></td>
+                    <td><i class="fas fa-archive"></i></td>
+                    <td><i class="fas fa-trailer"></i></td>
+                </tr>
+                </table>
+                <form>
+                    <label>Email:<input type="text" name="Email"></label><br>
+                    <label>mobile:<input type="text" name="mobile"></label><br>
+                    <textarea name="comments" rows="4">Enter your message</textarea><br>
+                    <input type="submit" value="submit"/><br>
+                    </form>
+            </main>
+        </div>
+    </body>
+</html>

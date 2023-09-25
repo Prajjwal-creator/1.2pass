@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <h1>JavaScript Concepts</h1>
+
+    <h2>String Methods</h2>
+    <p id="stringDemo"></p>
+
+    <h2>Number Methods</h2>
+    <p id="numberDemo"></p>
+
+    <h2>Array Methods</h2>
+    <p id="arrayDemo"></p>
+
+    <h2>Date Methods</h2>
+    <p id="dateDemo"></p>
+
+    <h2>Function Methods</h2>
+    <p id="functionDemo"></p>
+
+    <script>
+        // String Methods
+        const str = 'I AM HAPPY!';
+        const stringDemo = document.getElementById('stringDemo');
+        stringDemo.innerHTML = `
+            Length: ${str.length}<br>
+            Uppercase: ${str.toUpperCase()}<br>
+            Lowercase: ${str.toLowerCase()}<br>
+            Substring: ${str.substring(0, 10)}<br>
+            Replace: ${str.replace('SAD', 'AWESOME')}<br>
+        `;
+
+        // Number Methods
+        const num = 42.5678;
+        const numberDemo = document.getElementById('numberDemo');
+        numberDemo.innerHTML = `
+            Fixed: ${num.toFixed(2)}<br>
+            Exponential: ${num.toExponential(2)}<br>
+            Precision: ${num.toPrecision(4)}<br>
+            Integer: ${parseInt(num)}<br>
+            Square Root: ${Math.sqrt(num)}<br>
+        `;
+
+        // Array Methods
+        const fruits = ['Mango', 'Grapes', 58, 42, 73];
+        const arrayDemo = document.getElementById('arrayDemo');
+        arrayDemo.innerHTML = `
+            Length: ${fruits.length}<br>
+            Join: ${fruits.join(', ')}<br>
+            Push: ${fruits.push('Strawberries')}<br>
+            Pop: ${fruits.pop()}<br>
+            IndexOf: ${fruits.indexOf('Mango')}<br>
+        `;
+
+        // Date Methods
+        const currentDate = new Date();
+        const dateDemo = document.getElementById('dateDemo');
+        dateDemo.innerHTML = `
+            Date: ${currentDate.getDate()}<br>
+            Month: ${currentDate.getMonth()}<br>
+            Year: ${currentDate.getFullYear()}<br>
+            Hours: ${currentDate.getHours()}<br>
+            Minutes: ${currentDate.getMinutes()}<br>
+        `;
+
+        // Function Methods
+        function Prajjwal(name) {
+            return `Hello, ${name}!`;
+        }
+        const functionDemo = document.getElementById('functionDemo');
+        functionDemo.innerHTML = `
+            Function Name: ${Prajjwal.name}<br>
+            Function Length: ${Prajjwal.length}<br>
+        `;
+    </script>
+</body>
+</html>
